@@ -1,6 +1,11 @@
 body {
-  color: #34373c !important;
+  color: #04594d !important;
+  background-color: #eee7de !important;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
-h1 {
-  color: black !important;
+main {
+  margin-top: 100px;
+}
+nav {
+  background-color: #eee7de !important;
 }
