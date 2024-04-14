@@ -1,11 +1,22 @@
+.root {
+  secondary-color: #8fdbc1;
+}
 body {
   color: #04594d !important;
   background-color: #eee7de !important;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Platypi", serif !important;
 }
 main {
   margin-top: 100px;
 }
-nav {
-  background-color: #eee7de !important;
+.hero {
+  padding: 80px 20px !important;
+  color: #233930;
+}
+.container {
+  background-color: #233930;
+  color: #d4ede4;
+}
+p {
+  text-align: start;
 }
