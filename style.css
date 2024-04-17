@@ -1,5 +1,5 @@
 body {
-  color: #233930 !important;
+  background-color: #eee7de !important;
 }
 main {
   margin-top: 100px;
@@ -11,6 +11,11 @@ main {
 .container {
   background-color: #233930;
   color: #d4ede4;
+  margin: 0 !important;
+}
+.projects-container {
+  margin: 0;
+  background-color: #233930;
 }
 p {
   color: #ffff;
