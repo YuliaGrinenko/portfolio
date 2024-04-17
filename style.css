@@ -4,6 +4,9 @@ body {
 main {
   margin-top: 100px;
 }
+.active {
+  color: #233930 !important;
+}
 .hero {
   padding: 80px 20px !important;
   color: #233930;
