@@ -32,15 +32,18 @@
     <title>Yulia Hrinenko, front-end developer</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #eee7de">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:#eee7de">
         <div class="container-fluid">
-          <a class="navbar-brand navbar-font" href="/" title="Homepage">Yulia Hrinenko</a>
+          <a class="navbar-brand navbar-font text-uppercase" href="/" title="Homepage">Yulia Hrinenko <span class="laobrige-font"></span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-               <a class="nav-link active navbar-font mx-2" href="/" title="Work">Home</a>
-              <a class="nav-link navbar-font mx-2" href="/work.html" title="Work">Work</a>
+              <a class="nav-link active navbar-font mx-2" aria-current="page" href="/" title="Home">Home</a>
+              <a class="nav-link navbar-font mx-2" aria-current="page" href="/work.html" title="work.html">Projects</a>
               <a class="nav-link navbar-font mx-2" href="/about.html" title="About">About Me</a>
-              <a class="nav-link navbar-font mx-2" href="/contact.html" title="About">Contact</a>
+                   <a class="nav-link navbar-font mx-2" href="/contact.html" title="Contact">Contact</a>
             </div>
           </div>
         </div>
@@ -56,65 +59,39 @@
       <div class="text-center mb-5">
         Check out some of my featured projects below
       </div>
-<div class="projects container text-center">
+      <div class="projects">
+<div class="container text-center mx-auto">
       <div class="container text-center mx-auto p-5">
         <div class="row">
-          <div class="col-sm-6 mx-auto" style="width: 400px">
+          <div class="col-md-4">
             <img
               src="/images/weather-app.png"
               class="img-fluid rounded d-none d-sm-block"
               alt="Weather Application"
-              width="400px"
-              ;
             />
-          </div>
-          <div class="col-sm-6">
-            <h1 class="text-center">Weather App</h1>
+              <h2>Weather App</h2>
             <p>
-              This application was built with Javascript, HTML, CSS, using
-              OpenWeatherMap API. It can search for the weather in any city as
-              well as display the future forecast.
-            </p>
-            <a
-              href="https://www.shecodes.io/cohorts/shecodes-plus-9124d48c-d105-491a-9513-448b88d494fb/projects/2116642?_gl=1*1wl8vef*_gcl_au*ODE3NTM5NDM3LjE3MTI4NDgxMjE"
-              title="Weather Application"
-              class="button-projects"
-              target="_blank"
-              >View project</a
-            >
+Built with HTML, CSS and JavaScript</p>
           </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col-sm-6">
-            <h1 class="text-center">Dictionary App</h1>
-            <p>This application was built with Javascript, HTML, CSS.</p>
-            <a href="#" class="button-projects">View project</a>
-          </div>
-          <div class="col-sm-6 mx-auto" style="width: 400px">
-            <img
-              src="/images/dictionary.png"
-              class="img-fluid rounded d-none d-sm-block"
-              alt="Dictionary Application"
-            />
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-sm-6 mx-auto" style="width: 400px">
+         <div class="col-md-4">
             <img
               src="/images/first-project.png"
               class="img-fluid rounded d-none d-sm-block"
               alt="Landing page"
+            
             />
+
           </div>
-          <div class="col-sm-6">
-            <h1 class="text-center">Landing Page</h1>
+          <div class="col-md-4">
+          <img
+              src="/images/dictionary.png"
+              class="img-fluid rounded d-none d-sm-block"
+              alt="Dictionary"
+            />
+            <h2>Dictionary App</h2>
             <p>
-              This is my first project created within SheCodes basic course.
-              It's a landing page built using HTML and CSS.
-            </p>
-            <a href="#" class="button-projects">View project</a>
-          </div>
-        </div>
+Built with HTML, CSS and React</p>
+            </div>
       </div>
       </div>
     </main>
