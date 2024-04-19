@@ -10,8 +10,16 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -32,71 +40,110 @@
     <title>Yulia Hrinenko, front-end developer</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:#eee7de">
-        <div class="container-fluid">
-          <a class="navbar-brand navbar-font text-uppercase" href="/" title="Homepage">Yulia Hrinenko <span class="laobrige-font"></span></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active navbar-font mx-2" aria-current="page" href="/" title="Home">Home</a>
-              <a class="nav-link navbar-font mx-2" aria-current="page" href="/work.html" title="work.html">Projects</a>
-              <a class="nav-link navbar-font mx-2" href="/about.html" title="About">About Me</a>
-                   <a class="nav-link navbar-font mx-2" href="/contact.html" title="Contact">Contact</a>
-            </div>
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-light"
+      style="background-color: #eee7de"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand navbar-font text-uppercase"
+          href="/"
+          title="Homepage"
+          >Yulia Hrinenko <span class="laobrige-font"></span
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a
+              class="nav-link active navbar-font mx-2"
+              aria-current="page"
+              href="/"
+              title="Home"
+              >Home</a
+            >
+            <a
+              class="nav-link navbar-font mx-2"
+              aria-current="page"
+              href="/work.html"
+              title="work.html"
+              >Projects</a
+            >
+            <a
+              class="nav-link navbar-font mx-2"
+              href="/about.html"
+              title="About"
+              >About Me</a
+            >
+            <a
+              class="nav-link navbar-font mx-2"
+              href="/contact.html"
+              title="Contact"
+              >Contact</a
+            >
           </div>
         </div>
-      </nav>
-      <div class="hero text-center">
-        <h2>Hi, my name is</h2>
-        <h1 class="mb-4 fw-bold">Yulia Hrinenko</h1>
-        <h3 class="mb-5 fst-italic fw-light">
-          I'm front-end developer from Ukraine, based in the UK
-        </h3>
-        <a href="#contacts" class="button-custom">Contact me</a>
       </div>
-      <div class="projects">
-        <h2 class="text-center pt-5">
-       My Featured Coding Projects 
-        </h2>
-<div class="container text-center mx-auto">
-      <div class="container text-center">
+    </nav>
+    <div class="hero text-center">
+      <h2>Hi, my name is</h2>
+      <h1 class="mb-4 fw-bold">Yulia Hrinenko</h1>
+      <h3 class="mb-5 fst-italic fw-light">
+        I'm front-end developer from Ukraine, based in the UK
+      </h3>
+      <div class="my-5">
+        <a href="#contacts" class="button-custom text-light">Contact me</a>
+      </div>
+    </div>
+    <div class="projects py-5 px-3">
+      <h2 class="text-center text-light">My Featured Coding Projects</h2>
+      <div class="container text-center mt-5">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <img
               src="/images/weather-app.png"
               class="img-fluid rounded"
               alt="Weather Application"
             />
-              <h3 class="mt-4">Weather App</h3>
-             <p class="fw-light">
-Built with HTML, CSS and JavaScript</p>
+            <h3 class="mt-4 text-light">Weather App</h3>
+            <p class="fw-light">Built with HTML, CSS and JavaScript</p>
           </div>
-         <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <img
               src="/images/first-project.png"
               class="img-fluid rounded"
               alt="Landing page"
-           />
-           <h3 class="mt-4">Landing Page</h3>
-             <p class="fw-light">
-Built with HTML and CSS</p>
-            </div>
+            />
+            <h3 class="mt-4 text-light">Landing Page</h3>
+            <p class="fw-light">Built with HTML and CSS</p>
+          </div>
 
-          <div class="col-md-4">
-          <img
+          <div class="col-md-4 mb-3">
+            <img
               src="/images/dictionary.png"
               class="img-fluid rounded"
               alt="Dictionary"
             />
-            <h3 class="mt-4">Dictionary App</h3>
-            <p class="fw-light">
-Built with HTML, CSS and React</p>
-            </div>
+            <h3 class="mt-4 text-light">Dictionary App</h3>
+            <p class="fw-light">Built with HTML, CSS and React</p>
+          </div>
+        </div>
+        <div class="my-5">
+          <a href="/work.html" class="button-projects mb-5">View details → </a>
+        </div>
       </div>
-      </div>
-        <a href="/work.html" class="button-custom-projects">View projects</a>
     </div>
     <footer class="text-center p-5" id="contacts">
       <h1>Let's connect!</h1>
@@ -114,7 +161,7 @@ Built with HTML, CSS and React</p>
         ></a>
         <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
       </div>
-      <p>© 2024 developed by Yulia Hrinenko </p>
-     </footer>
+      <p>© 2024 developed by Yulia Hrinenko</p>
+    </footer>
   </body>
 </html>
