@@ -69,6 +69,9 @@ footer {
   background-color: var(--background-color);
   color: var(--primary-color);
 }
+.content-container {
+  background-color: var(--secondary-background-color);
+}
 .fa-brands {
   color: #233930;
   width: 100px;
@@ -91,7 +94,10 @@ footer {
   object-fit: cover;
   height: 350px;
 }
-
+.projects-page img {
+  object-fit: cover;
+  height: 400px;
+}
 @media (max-width: 576px) {
   .hero h1 {
     font-size: 40px !important;
