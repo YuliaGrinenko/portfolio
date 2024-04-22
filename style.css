@@ -90,15 +90,12 @@ footer {
   color: #233930 !important;
   font-family: var(--main-font-family) !important;
 }
-.col-lg-4 img {
-  object-fit: cover;
-  height: 350px;
-}
-.projects-page img {
+img {
   object-fit: cover;
   height: 400px;
 }
-@media (max-width: 576px) {
+
+@media (max-width: 768px) {
   .hero h1 {
     font-size: 40px !important;
   }
@@ -108,8 +105,15 @@ footer {
   .email-link {
     font-size: 18px;
   }
-  .col-lg-4 img {
+  img {
     width: auto;
-    height: 300px;
+    height: 200px;
+  }
+  .project-description {
+    text-align: center;
+    margin: 30px auto !important;
+  }
+  .col-md-5 {
+    text-align: center;
   }
 }
