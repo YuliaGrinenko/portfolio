@@ -63,7 +63,6 @@ body {
 .button-projects:hover {
   background-color: var(--secondary-color);
   transition: all 200ms ease-in-out;
-  font-weight: bold !important;
 }
 footer {
   background-color: var(--background-color);
@@ -110,10 +109,18 @@ footer {
   }
   .project-description {
     text-align: center;
-    margin: 30px auto !important;
+    margin-top: 20px !important;
+    margin-bottom: 0 !important;
   }
-  .col-md-5 {
+  .col-md-5 img {
     text-align: center;
+  }
+  .container p {
+    margin-bottom: 30px !important;
+  }
+  .button-projects {
+    padding: 10px 20px !important;
+    font-size: 16px;
   }
 }
 @media (768px <= width <= 1200px) {
@@ -125,9 +132,11 @@ footer {
 @media (max-width: 576px) {
   .col-md-4 img {
     max-height: 200px;
+    width: auto;
   }
   .col-md-5 img {
     max-height: 200px;
+    width: auto;
   }
   .container p {
     font-size: 14px;
@@ -136,7 +145,6 @@ footer {
     font-size: 22px;
   }
   .button-projects {
-    padding: 10px 20px !important;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
