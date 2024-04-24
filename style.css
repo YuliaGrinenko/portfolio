@@ -20,6 +20,9 @@ body {
   font-size: 80px !important;
   line-height: 1.5;
 }
+.hero h2 {
+  font-size: 36px !important;
+}
 
 .projects {
   background-color: var(--secondary-background-color);
@@ -72,9 +75,20 @@ footer {
   background-color: var(--secondary-background-color);
 }
 .fa-brands {
-  color: #233930;
-  width: 100px;
-  height: 100px;
+  color: var(--primary-color);
+  font-size: 22px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  border: 1px solid var(--background-color);
+}
+.fa-brands:hover {
+  color: #ffff;
+  transition: all 200ms ease-in-out;
+  background: var(--secondary-background-color);
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .email-link {
