@@ -32,7 +32,7 @@ body {
 .projects-page {
   padding: 100px 20px !important;
   background-color: var(--secondary-background-color);
-  color: #d4ede4;
+  color: var(--background-color);
 }
 .button-custom {
   background-color: var(--secondary-background-color);
@@ -57,10 +57,10 @@ body {
 .button-projects {
   background-color: var(--background-color);
   border-radius: 30px;
-  padding: 15px 30px !important;
+  padding: 15px 25px !important;
   margin-top: 60px !important;
   color: var(--primary-color);
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -113,6 +113,7 @@ footer {
 .navbar-brand {
   color: var(--primary-color) !important;
   font-family: var(--main-font-family) !important;
+  font-size: 16px !important;
 }
 .col-md-4 img {
   overflow: hidden;
@@ -141,9 +142,28 @@ footer {
   color: var(--primary-color);
   text-align: center;
 }
+@media (max-width: 576px) {
+  .col-md-4 img {
+    width: auto;
+    height: auto;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+  .container h2 {
+    font-size: 22px;
+  }
+  .button-projects {
+    font-size: 14px;
+  }
+}
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 40px !important;
+  }
+  .hero h2 {
+    font-size: 24px !important;
   }
   .projects h3 {
     font-size: 18px;
@@ -173,25 +193,14 @@ footer {
     height: 250px;
   }
 }
-@media (max-width: 576px) {
-  .col-md-4 img {
-    width: auto;
-    height: auto;
-  }
 
-  .container p {
-    font-size: 14px;
-  }
-  .container h2 {
-    font-size: 22px;
-  }
-  .button-projects {
-    font-size: 14px;
-  }
-}
 @media (max-width: 992px) {
   .about-me {
     font-size: 16px;
-    margin: 30px;
+    margin: 30px 10px;
+  }
+  .heading {
+    font-size: 40px !important;
+    margin-top: 70px;
   }
 }
