@@ -20,6 +20,7 @@ body {
 .hero h1 {
   font-size: 80px !important;
   line-height: 1.5;
+  color: var(--secondary-background-color);
 }
 .hero h2 {
   font-size: 36px !important;
@@ -109,7 +110,6 @@ footer {
 }
 
 .nav-link,
-.navbar-brand,
 .navbar-brand {
   color: var(--primary-color) !important;
   font-family: var(--main-font-family) !important;
