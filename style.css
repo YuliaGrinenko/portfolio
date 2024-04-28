@@ -83,7 +83,7 @@ footer {
   border-radius: 50%;
   background-color: var(--background-color);
   border: 1px solid var(--background-color);
-  margin: 0 15px;
+  margin: 0 10px;
 }
 .fa-brands:hover {
   color: #ffff;
