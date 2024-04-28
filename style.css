@@ -31,7 +31,7 @@ body {
   color: var(--background-color);
 }
 .projects-page {
-  padding: 100px 20px !important;
+  padding: 20px !important;
   background-color: var(--secondary-background-color);
   color: var(--background-color);
 }
