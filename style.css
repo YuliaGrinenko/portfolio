@@ -117,7 +117,9 @@ footer {
 }
 .col-md-4 img {
   overflow: hidden;
-  height: 400px;
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
 }
 .col-md-5 img {
   max-height: 350px;
@@ -191,6 +193,7 @@ footer {
   .col-md-4 img {
     overflow: hidden;
     height: 250px;
+    width: 100%;
   }
 }
 
