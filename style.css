@@ -30,7 +30,7 @@ body {
   background-color: var(--secondary-background-color);
   color: var(--background-color);
 }
-.projects-page {
+.work-page {
   padding: 20px !important;
   background-color: var(--secondary-background-color);
   color: var(--background-color);
@@ -115,14 +115,23 @@ footer {
   font-family: var(--main-font-family) !important;
   font-size: 16px !important;
 }
-.col-md-4 img {
+.project-container {
+  height: 400px;
   overflow: hidden;
-  height: 300px;
-  object-fit: cover;
-  width: 100%;
 }
-.col-md-5 img {
-  max-height: 350px;
+.project-image {
+  min-height: 400px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.work-image {
+  overflow: hidden;
+}
+.work-image img {
+  max-height: 400px;
+  width: auto;
+  object-fit: cover;
 }
 .about-me {
   font-size: 18px;
@@ -145,11 +154,6 @@ footer {
   text-align: center;
 }
 @media (max-width: 576px) {
-  .col-md-4 img {
-    width: auto;
-    height: auto;
-  }
-
   .container p {
     font-size: 14px;
   }
@@ -174,12 +178,13 @@ footer {
     font-size: 18px;
   }
   .project-description {
-    text-align: center;
     margin-top: 20px !important;
     margin-bottom: 0 !important;
   }
-  .col-md-5 img {
+
+  .work-page img {
     text-align: center;
+    width: 100%;
   }
   .container p {
     margin-bottom: 30px !important;
@@ -189,14 +194,14 @@ footer {
     font-size: 16px;
   }
 }
-@media (768px <= width <= 1200px) {
-  .col-md-4 img {
-    overflow: hidden;
-    height: 250px;
-    width: 100%;
+@media (min-width: 768px) and (max-width: 992px) {
+  .project-container {
+    height: 200px;
+  }
+  .project-image {
+    min-height: 200px;
   }
 }
-
 @media (max-width: 992px) {
   .about-me {
     font-size: 16px;
@@ -205,5 +210,18 @@ footer {
   .heading {
     font-size: 40px !important;
     margin: 70px 20px 20px 20px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .project-container {
+    height: 300px;
+  }
+  .project-image {
+    min-height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .work-image img {
+    max-width: 400px;
   }
 }
