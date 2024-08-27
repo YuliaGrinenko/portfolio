@@ -76,6 +76,10 @@ footer {
 .content-container {
   background-color: var(--secondary-background-color);
 }
+.work-page {
+  width: 100%;
+  margin: auto 0 !important;
+}
 .fa-brands {
   color: var(--primary-color);
   font-size: 22px;
