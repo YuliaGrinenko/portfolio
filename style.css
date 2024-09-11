@@ -76,10 +76,7 @@ footer {
 .content-container {
   background-color: var(--secondary-background-color);
 }
-.work-page {
-  width: 100%;
-  margin: auto 0 !important;
-}
+
 .fa-brands {
   color: var(--primary-color);
   font-size: 22px;
@@ -214,6 +211,12 @@ footer {
   .heading {
     font-size: 40px !important;
     margin: 70px 20px 20px 20px !important;
+  }
+  .project-description p {
+    font-size: 14px;
+  }
+  .project-description h2 {
+    font-size: 20px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
