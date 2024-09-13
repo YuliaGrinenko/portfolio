@@ -77,7 +77,8 @@ footer {
   background-color: var(--secondary-background-color);
 }
 
-.fa-brands {
+.fa-brands,
+.fa-envelope {
   color: var(--primary-color);
   font-size: 22px;
   padding: 10px;
@@ -86,7 +87,9 @@ footer {
   border: 1px solid var(--background-color);
   margin: 0 10px;
 }
-.fa-brands:hover {
+
+.fa-brands:hover,
+.fa-envelope:hover {
   color: #ffff;
   transition: all 200ms ease-in-out;
   background: var(--secondary-background-color);
