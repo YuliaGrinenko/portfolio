@@ -30,7 +30,7 @@ body {
   color: var(--background-color);
 }
 
-.project-link {
+/*.project-link {
   text-decoration: none;
   color: inherit;
 }
@@ -38,8 +38,8 @@ body {
 .project-link:hover {
   color: var(--secondary-color);
   text-decoration: underline;
-}
-.work-page -- {
+}*/
+.work-page {
   padding: 20px !important;
   background-color: var(--secondary-background-color);
   color: var(--background-color);
