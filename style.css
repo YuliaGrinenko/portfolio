@@ -14,23 +14,32 @@ body {
 .hero {
   padding: 200px 20px !important;
   color: var(--primary-color);
-  font-family: var(--heading-font-family);
   background-color: var(--background-color);
 }
 .hero h1 {
   font-size: 80px !important;
   line-height: 1.5;
-  color: var(--secondary-background-color);
 }
 .hero h2 {
   font-size: 36px !important;
+  font-family: var(--main-font-family);
 }
 
 .projects {
   background-color: var(--secondary-background-color);
   color: var(--background-color);
 }
-.work-page {
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+.work-page -- {
   padding: 20px !important;
   background-color: var(--secondary-background-color);
   color: var(--background-color);
