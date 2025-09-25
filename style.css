@@ -18,6 +18,7 @@ body {
 }
 .hero h1 {
   font-size: 80px !important;
+  font-family: var(--heading-font-family);
   line-height: 1.5;
 }
 .hero h2 {
@@ -134,6 +135,10 @@ footer {
 .project-container {
   height: 400px;
   overflow: hidden;
+  transition: transform 740ms;
+}
+.project-container:hover {
+  transform: translateY(10px);
 }
 .project-image {
   min-height: 400px;
@@ -141,6 +146,11 @@ footer {
   width: 100%;
   object-fit: cover;
 }
+/*transition: transform 740ms;
+}
+.project-image:hover {
+  transform: translateY(10px);
+}*/
 .work-image {
   overflow: hidden;
 }
