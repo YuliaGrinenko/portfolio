@@ -108,7 +108,9 @@
     </div>
     <div class="projects py-5 px-0">
       <h2 class="text-center">My Projects</h2>
-      <div class="container projects-overview mt-5 text-center">
+      <div
+        class="container projects-overview mt-5 text-center fade-in-up-on-scroll"
+      >
         <div class="row">
           <div class="col-md-4 mb-3">
             <div class="project-container">
@@ -206,4 +208,20 @@
       <p class="fw-light text-center">© 2024 developed by Yulia Hrinenko</p>
     </footer>
   </body>
+  <script>
+    const elementsToFadeInUpOnScroll = document.querySelectorAll(
+      ".fade-in-up-on-scroll"
+    );
+    if (elementsToFadeInUpOnScroll) {
+      window.addEventListener("scroll", function (event) {
+        elementsToFadeInUpOnScroll.forEach(function (element) {
+          if (window.scrollY >= element.offsetTop - window.innerHeight + 200) {
+            element.classList.add("fade-in-up");
+          } else {
+            element.classList.remove("fade-in-up");
+          }
+        });
+      });
+    }
+  </script>
 </html>
