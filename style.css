@@ -1,28 +1,23 @@
 :root {
-  --primary-color: #233930;
-  --background-color: #eee7de;
-  --secondary-background-color: #04594d;
-  --secondary-color: #d4ede4;
+  --primary-color: #fff;
+  --background-color: #0b1930;
+  --secondary-color: #4aecb3;
   --main-font-family: "Poppins", sans-serif;
   --heading-font-family: "Playfair Display", serif;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 body {
   background-color: var(--background-color) !important;
   font-family: var(--main-font-family) !important;
-  color: var(--primary-color);
 }
 .hero {
   padding: 200px 20px !important;
   color: var(--primary-color);
-  background-color: var(--background-color);
 }
 .reveal {
   opacity: 0;
   transform: translateY(10px);
-  animation: fadeUp 0.6s ease forwards;
+  animation: fadeUp 0.8s ease forwards;
 }
 .reveal.delay-1 {
   animation-delay: 0.2s;
@@ -33,7 +28,9 @@ body {
 .reveal.delay-3 {
   animation-delay: 0.6s;
 }
-
+.reveal.delay-3 {
+  animation-delay: 0.8s;
+}
 @keyframes fadeUp {
   to {
     opacity: 1;
@@ -67,17 +64,22 @@ body {
   font-size: 80px !important;
   font-family: var(--heading-font-family);
   line-height: 1.5;
+  color: var(--primary-color);
 }
 .hero h2 {
   font-size: 36px !important;
   font-family: var(--main-font-family);
+  color: var(--secondary-color);
 }
-
 .projects {
-  background-color: var(--secondary-background-color);
-  color: var(--background-color);
+  color: var(--primary-color);
 }
-
+.projects h3 {
+  font-size: 20px;
+}
+.projects h2 {
+  color: var(--secondary-color);
+}
 .project-link {
   text-decoration: none;
   color: inherit;
@@ -89,12 +91,14 @@ body {
 }
 .work-page {
   padding: 20px !important;
-  background-color: var(--secondary-background-color);
-  color: var(--background-color);
+  color: var(--primary-color);
+}
+.work-page p {
+  color: #a9adb7;
 }
 .button-custom {
-  background-color: var(--secondary-background-color);
   border-radius: 30px;
+  border: 1px solid var(--secondary-color);
   padding: 15px 40px;
   font-size: 18px;
   line-height: 1.5;
@@ -102,22 +106,24 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   font-family: var(--main-font-family);
   margin-top: 40px !important;
+  color: var(--secondary-color);
 }
 
 .button-custom:hover {
-  border: 1px solid var(--secondary-background-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 30px;
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
   transition: all 200ms ease-in-out;
-  color: var(--primary-color) !important;
+  color: var(--background-color) !important;
 }
 
 .button-projects {
   background-color: var(--background-color);
   border-radius: 30px;
+  border: 1px solid var(--secondary-color);
   padding: 15px 25px !important;
   margin-top: 60px !important;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 16px;
   text-decoration: none;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -125,15 +131,12 @@ body {
 .button-projects:hover {
   background-color: var(--secondary-color);
   transition: all 200ms ease-in-out;
+  color: var(--background-color);
 }
 footer {
   background-color: var(--background-color);
   color: var(--primary-color);
 }
-.content-container {
-  background-color: var(--secondary-background-color);
-}
-
 .fa-brands,
 .fa-envelope {
   color: var(--primary-color);
@@ -147,7 +150,7 @@ footer {
 
 .fa-brands:hover,
 .fa-envelope:hover {
-  color: #ffff;
+  color: var(--secondary-color);
   transition: all 200ms ease-in-out;
   background: var(--secondary-background-color);
   border-radius: 50%;
@@ -157,11 +160,10 @@ footer {
   color: var(--primary-color);
 }
 .contacts p {
-  font-size: 22px;
+  font-size: 16px;
   color: var(--primary-color);
 }
 .email-link {
-  font-size: 22px;
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -172,9 +174,9 @@ footer {
 
 .nav-link,
 .navbar-brand {
-  color: var(--primary-color) !important;
   font-family: var(--main-font-family) !important;
   font-size: 16px !important;
+  color: var(--primary-color) !important;
 }
 .nav-link:hover {
   text-decoration: underline;
@@ -190,11 +192,7 @@ footer {
   width: 100%;
   object-fit: cover;
 }
-/*transition: transform 740ms;
-}
-.project-image:hover {
-  transform: translateY(10px);
-}*/
+
 .work-image {
   overflow: hidden;
 }
@@ -204,24 +202,17 @@ footer {
   object-fit: cover;
 }
 .about-me {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5em;
-  text-align: left;
-  color: var(--background-color);
-  text-align: left;
-  padding: 50px;
-  margin: 0 250px;
-}
-.about-container {
-  background-color: var(--secondary-background-color);
-  padding: 30px auto;
-}
-.heading {
-  margin: 50px 0;
-  font-size: 70px !important;
-  font-family: var(--heading-font-family);
   color: var(--primary-color);
   text-align: center;
+  margin: 0 200px;
+}
+
+.heading {
+  margin: 50px 0;
+  text-align: center;
+  color: var(--secondary-color);
 }
 @media (max-width: 576px) {
   .container p {
@@ -241,15 +232,10 @@ footer {
   .hero h2 {
     font-size: 24px !important;
   }
-  .projects h3 {
-    font-size: 18px;
-  }
-  .email-link {
-    font-size: 18px;
-  }
   .project-description {
     margin-top: 20px !important;
     margin-bottom: 0 !important;
+    color: var(--primary-color) !important;
   }
 
   .work-page img {
@@ -263,6 +249,9 @@ footer {
     padding: 10px 20px !important;
     font-size: 16px;
   }
+  .about-me {
+    margin: 30px 10px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .project-container {
@@ -273,19 +262,12 @@ footer {
   }
 }
 @media (max-width: 992px) {
-  .about-me {
-    font-size: 16px;
-    margin: 30px 10px;
-  }
   .heading {
-    font-size: 40px !important;
     margin: 70px 20px 20px 20px !important;
   }
-  .project-description p {
-    font-size: 14px;
-  }
-  .project-description h2 {
-    font-size: 20px;
+
+  .about-me {
+    margin: 30px 100px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -294,6 +276,9 @@ footer {
   }
   .project-image {
     min-height: 300px;
+  }
+  .about-me {
+    margin: 30px 100px;
   }
 }
 @media (min-width: 1200px) {
