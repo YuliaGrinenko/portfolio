@@ -210,7 +210,7 @@ footer {
   font-size: 16px;
   line-height: 1.5em;
   color: var(--primary-color);
-  text-align: center;
+  text-align: left;
   margin: 0 200px;
 }
 
@@ -228,6 +228,9 @@ footer {
   }
   .button-projects {
     font-size: 14px;
+  }
+  .about-me {
+    margin: 0;
   }
 }
 @media (max-width: 768px) {
@@ -253,9 +256,6 @@ footer {
   .button-projects {
     padding: 10px 20px !important;
     font-size: 16px;
-  }
-  .about-me {
-    margin: 30px 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -289,5 +289,9 @@ footer {
 @media (min-width: 1200px) {
   .work-image img {
     max-width: 400px;
+  }
+
+  .about-me {
+    text-align: center;
   }
 }
