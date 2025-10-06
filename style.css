@@ -229,9 +229,6 @@ footer {
   .button-projects {
     font-size: 14px;
   }
-  .about-me {
-    margin: 0;
-  }
 }
 @media (max-width: 768px) {
   .hero h1 {
@@ -257,6 +254,10 @@ footer {
     padding: 10px 20px !important;
     font-size: 16px;
   }
+
+  .about-me {
+    margin: 0 30px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .project-container {
@@ -270,9 +271,8 @@ footer {
   .heading {
     margin: 70px 20px 20px 20px !important;
   }
-
   .about-me {
-    margin: 30px 100px;
+    margin: 0 30px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -281,9 +281,6 @@ footer {
   }
   .project-image {
     min-height: 300px;
-  }
-  .about-me {
-    margin: 30px 100px;
   }
 }
 @media (min-width: 1200px) {
