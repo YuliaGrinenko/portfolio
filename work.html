@@ -85,10 +85,10 @@
         </div>
       </div>
     </nav>
-    <h1 class="text-center heading">My Projects</h1>
+    <h1 class="reveal text-center heading">My Projects</h1>
     <div class="content-container">
       <div class="container work-page">
-        <div class="row my-5">
+        <div class="reveal delay-1 row my-5">
           <div class="work-image col-md-5 text-center">
             <img
               src="/images/weather-app.png"
@@ -130,7 +130,7 @@
             </div>
           </div>
         </div>
-        <div class="row mb-5">
+        <div class="reveal row mb-5">
           <div class="work-image col-md-5 text-center">
             <img
               src="/images/react-weather-app.png"
@@ -168,7 +168,7 @@
             </div>
           </div>
         </div>
-        <div class="row mb-5">
+        <div class="reveal row mb-5">
           <div class="work-image col-md-5 text-center">
             <img
               src="/images/maldives-landing.png"
@@ -236,4 +236,19 @@
       <p class="fw-light text-center">© 2024 developed by Yulia Hrinenko</p>
     </footer>
   </body>
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    const revealOnScroll = () => {
+      for (const el of reveals) {
+        const rect = el.getBoundingClientRect();
+        const visibleHeight = window.innerHeight * 0.85;
+        if (rect.top < visibleHeight) {
+          el.classList.add("visible");
+        }
+      }
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
 </html>

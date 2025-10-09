@@ -16,48 +16,45 @@ body {
 }
 .reveal {
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(30px);
   animation: fadeUp 0.8s ease forwards;
 }
 .reveal.delay-1 {
   animation-delay: 0.2s;
 }
 .reveal.delay-2 {
-  animation-delay: 0.4s;
-}
-.reveal.delay-3 {
   animation-delay: 0.6s;
 }
 .reveal.delay-3 {
-  animation-delay: 0.8s;
+  animation-delay: 1s;
 }
-@keyframes fadeUp {
+.reveal.delay-4 {
+  animation-delay: 1.4s;
+}
+@keyframes reveal {
   to {
     opacity: 1;
-    transform: none;
-  }
-}
-@keyframes fadeInUp {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
     transform: translateY(0);
-    opacity: 1;
   }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.fade-in-up-on-scroll {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+.delay-1 {
+  transition-delay: 0.2s;
 }
-.fade-in-up {
-  animation: 1.75s both fadeInUp;
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s ease-out;
+.delay-2 {
+  transition-delay: 0.4s;
+}
+.delay-3 {
+  transition-delay: 0.6s;
 }
 
 .hero h1 {
