@@ -14,29 +14,8 @@ body {
   padding: 200px 20px !important;
   color: var(--primary-color);
 }
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 0.8s ease forwards;
-}
-.reveal.delay-1 {
-  animation-delay: 0.2s;
-}
-.reveal.delay-2 {
-  animation-delay: 0.6s;
-}
-.reveal.delay-3 {
-  animation-delay: 1s;
-}
-.reveal.delay-4 {
-  animation-delay: 1.4s;
-}
-@keyframes reveal {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
+
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -47,15 +26,10 @@ body {
   transform: translateY(0);
 }
 
-.delay-1 {
-  transition-delay: 0.2s;
-}
-.delay-2 {
-  transition-delay: 0.4s;
-}
-.delay-3 {
-  transition-delay: 0.6s;
-}
+.delay-1 { transition-delay: 0.2s; }
+    .delay-2 { transition-delay: 0.4s; }
+    .delay-3 { transition-delay: 0.6s; }
+    .delay-4 { transition-delay: 0.8s; }
 
 .hero h1 {
   font-size: 80px !important;
