@@ -171,12 +171,13 @@ footer {
   text-decoration: underline;
 }
 .project-container {
-  height: 400px;
+  height: 280px;
   overflow: hidden;
 }
 
 .project-image {
-  height: 280px;
+  min-height: 280px;
+  height: 100%;
   width: 100%;
   object-fit: contain;
   background: #f8f9fa;
