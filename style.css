@@ -204,6 +204,17 @@ footer {
   text-align: center;
   color: var(--secondary-color);
 }
+.skills-inline {
+  color: #ffffff;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.skills-inline span {
+  color: #5ce1e6; /* Your accent green */
+  margin: 0 8px;
+}
+
 @media (max-width: 576px) {
   .container p {
     font-size: 14px;
