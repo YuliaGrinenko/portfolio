@@ -183,13 +183,34 @@ footer {
   background: #f8f9fa;
 }
 
-.work-image {
+/*.work-image {
   overflow: hidden;
 }
 .work-image img {
   max-height: 400px;
   width: auto;
   object-fit: cover;
+}*/
+
+.work-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-image img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+.work-image video.demo {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
 }
 .about-me {
   font-size: 16px;
