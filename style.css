@@ -197,20 +197,22 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0.375rem;
+  overflow: hidden;
 }
 
 .work-image img {
   width: 100% !important;
   max-width: 100% !important;
   height: 100% !important;
-  object-fit: contain !important;
+  object-fit: cover !important;
 }
 
 .work-image video.demo {
   width: 100% !important;
   max-width: 100% !important;
   height: auto !important;
-  object-fit: contain !important;
+  object-fit: cover !important;
 }
 .about-me {
   font-size: 16px;
