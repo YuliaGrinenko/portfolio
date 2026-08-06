@@ -237,6 +237,9 @@ footer {
   color: #5ce1e6; /* Your accent green */
   margin: 0 8px;
 }
+.reflective-practise p {
+  color: #a9adb7;
+}
 
 @media (max-width: 576px) {
   .container p {
