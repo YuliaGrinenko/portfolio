@@ -181,6 +181,11 @@ footer {
   width: 100%;
   object-fit: contain;
   background: #f8f9fa;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+.project-container:hover .project-image {
+  transform: scale(1.08);
 }
 
 /*.work-image {
