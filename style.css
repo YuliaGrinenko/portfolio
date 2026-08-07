@@ -173,6 +173,9 @@ footer {
 .project-container {
   height: 280px;
   overflow: hidden;
+  border-radius: 0.375rem;
+  isolation: isolate;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .project-image {
